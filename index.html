@@ -17,6 +17,36 @@
         <div class="result-container">
             <span id="result"></span>
             <button class="btn"
+            id="clipboard">
+			<i class="far fa-clipboard"></i>
+		</button>
+    </div>
+    <div class="settings">
+		<div class="setting">
+			<label>Password length</label>
+			<input type="number" id="length" min='8' max='128' value='20' />
+		</div>
+		<div class="setting">
+			<label>Include uppercase letters</label> 
+			<input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="setting">
+			<label>Include lowercase letters</label> 
+			<input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="setting">
+			<label>Include numbers</label> 
+			<input type="checkbox" id="numbers" checked />
+		</div>
+		<div class="setting">
+			<label>Include symbols</label> 
+			<input type="checkbox" id="symbols" checked />
+		</div>
+	</div>
+	<button class="btn btn-large" id="generate">
+		Generate password
+	</button>
+</div>
 </body>
 
 </html>
