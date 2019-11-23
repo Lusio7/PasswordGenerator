@@ -41,6 +41,13 @@ if(typesCount === 0) {
     return '';
 }
 
+for(let i=0; i<length; i+=typesCount) {
+    typesArr.forEach(type => {
+        const funcName = Object.keys(type)[0];
+        generatedPassword += randomFunc[funcName]();
+    });
+}
+
 // generator functions
 
 function getRandomLower() {
