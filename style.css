@@ -43,7 +43,7 @@ input[type=checkbox] {
     border: 1px dashed lightgrey;
 }
 
-#generate {
+#generatePassword {
     background-color: red;
     color: white;
     font-size: 20px;
