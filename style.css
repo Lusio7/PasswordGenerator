@@ -21,6 +21,7 @@ body {
 
 h2 {
     margin-left: 50px;
+  
 }
 
 input[type=checkbox] {
@@ -46,6 +47,8 @@ input[type=checkbox] {
     background-color: red;
     color: white;
     font-size: 20px;
+    border-radius: 30.5px;
+    cursor: pointer;
     
 }
 
@@ -54,11 +57,15 @@ input[type=checkbox] {
     color: white;
     font-size: 20px;
     float: right;
+    border-radius: 30.5px;
+    cursor: pointer;
+
     
 }
 
 @media screen and (max-width: 400px) {
 	.result-container {
-		font-size: 14px;
+        font-size: 14px;
+       
 	}
 }
