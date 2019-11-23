@@ -18,6 +18,12 @@ const randomFunc = {
 	symbol: getRandomSymbol
 };
 
+clipboard.addEventListener('click', () => {
+	const textarea = document.createElement('textarea');
+	const password = resultEl.innerText;
+	
+	if(!password) { return; }
+
 // generate event listener
 generateEl.addEventListener('click', () => {
 	const length = +lengthEl.value;
@@ -47,6 +53,12 @@ for(let i=0; i<length; i+=typesCount) {
         generatedPassword += randomFunc[funcName]();
     });
 }
+
+const finalPassword = generatedPassword.slice(0, length);
+	
+	return finalPassword;
+}
+
 
 // generator functions
 
