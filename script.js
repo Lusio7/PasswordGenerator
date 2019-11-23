@@ -6,3 +6,10 @@ const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
 const clipboard = document.getElementById('clipboard');
+
+const randomFunc = {
+	lower: getRandomLower,
+	upper: getRandomUpper,
+	number: getRandomNumber,
+	symbol: getRandomSymbol
+}
